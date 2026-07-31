@@ -15,9 +15,7 @@ function safeDivide(a, b) {
 if (typeof a !== "number" || typeof b !== "number") {
   return "invalid input";
 }
-  return a / b;
-
-  b === 0 ? "cannot divide by zero" : a / b;
+  return b === 0 ? "cannot divide by zero" : a / b;
 }
 
 // --- Tests (do not edit) ---
