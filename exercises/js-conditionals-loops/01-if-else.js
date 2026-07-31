@@ -11,14 +11,19 @@
 // Use an if / else if / else chain. Do not worry about scores outside 0..100.
 
 function letterGrade(score) {
-if (score > 90) {
-console.log("A");
+if (score >= 90) {
+  return "A";
 }
-else if(score > 80) {console.log("B")}
-else if(score > 70) {console.log("C")}
-else if(score >= 60) {console.log("D")}
-
-else {console.log("F")}
+else if (score >= 80) {
+  return "B";
+}
+else if (score >= 70) {
+  return "C";
+}
+else if (score >= 60) {
+  return "D";
+}
+else { return "F"; }
 
 }
 
