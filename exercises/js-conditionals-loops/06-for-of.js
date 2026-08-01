@@ -8,7 +8,18 @@
 // array or string of vowels plus .includes(char) makes the check easy.
 
 function countVowels(word) {
-  // TODO: replace this with your implementation
+  
+  const vowels = ["a", "e", "i", "o", "u"]
+
+  if (word = "") {
+    return 0;
+  }
+
+  let count = 0;
+  for (const vowels of word) {
+    return count;
+  }
+
 }
 
 // --- Tests (do not edit) ---
