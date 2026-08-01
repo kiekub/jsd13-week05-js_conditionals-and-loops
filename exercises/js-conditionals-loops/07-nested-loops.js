@@ -25,7 +25,7 @@ function rectangle(width, height) {
     for (let col = 1; col <= width; col++) {
       result += "*"
     }
-    if (col < 4) {
+    if (row < height) {
       result += "\n"
     }
   }
