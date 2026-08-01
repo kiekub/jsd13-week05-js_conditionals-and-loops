@@ -21,11 +21,11 @@ function rectangle(width, height) {
   
   let result = "";
 
-  for (let i = 1; i < height; i++) {
-    for (let i = 1; i < width; i++) {
+  for (let row = 1; row <= height; row++) {
+    for (let col = 1; col <= width; col++) {
       result += "*"
     }
-    if (i < width || i < height) {
+    if (col < 4) {
       result += "\n"
     }
   }
