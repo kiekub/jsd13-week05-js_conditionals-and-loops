@@ -14,22 +14,22 @@
 // Use one loop for the rows and a nested loop (or repetition) for the columns.
 
 function rectangle(width, height) {
-  if (width < 1) {
-    return "";
-  }  else if (height < 1) {
+
+  if (width < 1 || height < 1) {
     return "";
   }
-
-  const rectangelWidth = "i";
-  const rectangelHeight = "o";
-
-  let result = "";
   
-  for (let i = 1; i >= 1; i++) {
-    return "*";
-    for (let o = 1; o >= 1; o++)
-      return "*";
+  let result = "";
+
+  for (let i = 1; i < height; i++) {
+    for (let i = 1; i < width; i++) {
+      result += "*"
+    }
+    if (i < width || i < height) {
+      result += "\n"
+    }
   }
+  return result;
 }
 
 // --- Tests (do not edit) ---
