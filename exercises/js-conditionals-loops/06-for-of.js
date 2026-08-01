@@ -9,17 +9,18 @@
 
 function countVowels(word) {
   
-  const vowels = ["a", "e", "i", "o", "u"]
-
-  if (word = "") {
+  if (word === "") {
     return 0;
   }
 
+  const vowels = ["a", "e", "i", "o", "u"]
   let count = 0;
-  for (const vowels of word) {
-    return count;
+  for (const char of word) {
+    if (vowels.includes(char)) {
+      count++;
+    }
   }
-
+  return count;
 }
 
 // --- Tests (do not edit) ---
