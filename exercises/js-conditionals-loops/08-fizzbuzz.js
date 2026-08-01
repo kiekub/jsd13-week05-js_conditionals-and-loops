@@ -18,18 +18,22 @@ function fizzBuzz(n) {
     return [];
   }
 
-  let k = 0;  
+  let k = [];  
   for (let i = 1; i <= n; i++) {
-    if (n % 3) {
-      k === "Fizz";
+    if (i % 3 === 0 && i % 5 === 0) {
+      k.push("FizzBuzz");
     }
-    else if (n % 5) {
-      k === "Buzz"
+    else if (i % 3 === 0) {
+      k.push("Fizz");
+    }
+    else if (i % 5 === 0) {
+      k.push("Buzz");
     }
     else {
-      return n;
+      k.push(i);
     }
-  }  
+  }
+  return k;  
 }
 
 // --- Tests (do not edit) ---
