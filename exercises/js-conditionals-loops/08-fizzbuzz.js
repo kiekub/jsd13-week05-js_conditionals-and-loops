@@ -14,7 +14,22 @@
 // The modulo operator n % k gives the remainder; it is 0 when k divides n.
 
 function fizzBuzz(n) {
-  // TODO: replace this with your implementation
+  if (n < 1) {
+    return [];
+  }
+
+  let k = 0;  
+  for (let i = 1; i <= n; i++) {
+    if (n % 3) {
+      k === "Fizz";
+    }
+    else if (n % 5) {
+      k === "Buzz"
+    }
+    else {
+      return n;
+    }
+  }  
 }
 
 // --- Tests (do not edit) ---
